@@ -20,14 +20,13 @@
 		}
 
 		.info {
-			font-size: 80px;
+			font-size: 40px;
 		}
 		</style>
 	</head>
 	<body>
 		<table class="countdownContainer">
 			<tr class="info">
-				<td colspan="4">Christmas Countdown</td>
 			</tr>
 			<tr class="info">
 				<td id="days">120</td>
@@ -46,7 +45,7 @@
 
 			function countdown(){
 				var now = new Date();
-				var eventDate = new Date(now.getFullYear(), 11, 25);
+				var eventDate = new Date("January 20, 2019 00:00:00");
 
 				var currentTiime = now.getTime();
 				var eventTime = eventDate.getTime();
